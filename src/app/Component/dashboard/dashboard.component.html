@@ -1,0 +1,11 @@
+<div class="dashboard-pg">
+    <button (click)="logout()">logout</button>
+    <div class="card-wrap">
+        <div class="card" *ngFor="let x of list">
+            <div class="card-header">
+                 <h2>{{x.title}}</h2>
+                <p>{{x.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+.login-form-page{
+    .login-form{
+        width: 400px;
+        margin: 100px auto;
+        .mat-form-field{
+            width:350px !important;
+         }
+         .link-text{
+            padding: 15px 0px;
+            p{
+                text-transform: capitalize;
+            }
+         }
+    }
+}

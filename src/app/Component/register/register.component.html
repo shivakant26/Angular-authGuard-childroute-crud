@@ -1,0 +1,51 @@
+<div class="reg-form-page">
+  <form [formGroup]="regForm" (ngSubmit)="signUp(regForm.value)">
+    <div class="reg-form">
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>Full Name</mat-label>
+              <input matInput placeholder="pat@example.com"
+              formControlName="fullName"
+              required>
+            </mat-form-field>
+            <span class="error" *ngIf="fullName && fullName.invalid && fullName.touched">Required</span>
+          </div>
+          <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>city</mat-label>
+              <input matInput placeholder="pat@example.com" 
+              formControlName="city"
+              required>
+            </mat-form-field>
+            <span class="error" *ngIf="city && city.invalid && city.touched">Required</span>
+          </div>
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="pat@example.com"
+              formControlName="email"
+              required>
+            </mat-form-field>
+            <span class="error" *ngIf="email && email.invalid && email.touched">Required</span>
+          </div>
+          <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="pat@example.com" 
+              formControlName="password"
+              required>
+            </mat-form-field>
+            <span class="error" *ngIf="password && password.invalid && password.touched">Required</span>
+          </div>
+          <div class="btn">
+            <button mat-raised-button
+             color="accent"
+             [disabled]="regForm.invalid"
+             >Register</button>
+          </div>
+          <div class="link-text">
+              <p>If you have a Account ? please <a routerLink="/login"> login </a>.</p>
+          </div>
+    </div>
+  </form>
+</div>

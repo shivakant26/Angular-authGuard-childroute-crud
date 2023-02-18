@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  menu : Array<string> = ["home","about","help","application","login"];
+  constructor(){
+    this.menu
+  }
+  ngOnInit():void{
+
+  }
 }

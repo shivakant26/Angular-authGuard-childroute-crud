@@ -1,0 +1,38 @@
+<div class="login-form-page">
+  <form #loginForm="ngForm" (ngSubmit)="login(loginForm.controls)">
+    <div class="login-form">
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="pat@example.com" 
+              [(ngModel)]="model.userName"
+              name="email"
+              #email="ngModel"
+              ngModel
+              required>
+            </mat-form-field>
+            <span *ngIf="email.invalid && email.touched">Required</span>
+          </div>
+          <div class="example-container">
+            <mat-form-field appearance="fill">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="pat@example.com" 
+              [(ngModel)]="model.password"
+              name="password"
+              #password = "ngModel"
+              ngModel
+              required>
+            </mat-form-field>
+            <span *ngIf="password.invalid && password.touched">Required</span>
+          </div>
+          <div class="btn">
+            <button mat-raised-button color="accent"
+            [disabled]="loginForm.invalid"
+            >login</button>
+          </div>
+          <div class="link-text">
+              <p>If not register ? please <a routerLink="/register"> register </a>first</p>
+          </div>
+    </div>
+  </form>
+</div>

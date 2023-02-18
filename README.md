@@ -1,3 +1,8 @@
+# Feature
+1. Template form validation in login form
+2. Reative form validation in registration form
+3. protected Routing usnig auth guard
+
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.

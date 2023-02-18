@@ -1,0 +1,22 @@
+.logo{
+    flex-grow: 1;
+}
+.menu {
+    ul{
+        li{
+            display: inline-block;
+            a{
+                text-decoration: none;
+                color:#fff;
+                padding: 0px 10px;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: uppercase;
+                transition: .4s;
+                &:hover{
+                    color: pink;
+                }
+            }
+        }
+    }
+}
